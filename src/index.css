@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .n{
+    margin-top: 100px;
+    margin: 50px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.965);
+    color: rgb(238, 231, 231);
+  }
+  
+  .container {
+    margin-top: 10px;
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(20, 20, 27);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: rgb(63, 48, 21);
+    transition: 0.3s;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+
+
+.me{
+    display: flex;
+    justify-content: center;
+  }
+
+.form-group h5{
+    line-height: 50px;
+      }
+    
+ .bu{
+    margin-top: 20px;
+    }
+
+.te h1{
+display: flex;
+justify-content: flex-start;
+}
+
+.te h5{
+  display: flex;
+  justify-content: flex-start;
+  }
+
+
+.her{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .map {
+    overflow: hidden;
+  }
+
+
+
+
+
+
+/* In your CSS file or stylesheet */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 70px;
+  background-color: #0c0202;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 88;
+  /* font-size: 16px; */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #000000;
+  transform: scale(1.1);
+}
+
+/* Optional: Add box shadow for a raised effect */
+.scroll-to-top-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+/* In your CSS file or stylesheet */
+.scroll-down-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-down-link:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+
+
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-duration: 0.3s; /* Adjust duration as needed */
+}
